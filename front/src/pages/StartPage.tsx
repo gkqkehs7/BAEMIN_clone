@@ -1,18 +1,31 @@
-import React, {useState} from 'react';
-import {StyleSheet, View, Text, Image, Dimensions} from 'react-native';
+import React, {useCallback, useState} from 'react';
+import {
+  StyleSheet,
+  View,
+  Text,
+  Image,
+  Dimensions,
+  Pressable,
+} from 'react-native';
+import {login} from '@react-native-seoul/kakao-login';
 
 function StartPage() {
+  const kakaoLogin = useCallback(async () => {
+    await login();
+  }, []);
   return (
     <View style={styles.container}>
-      <View style={styles.logo}>
+      <View>
         <Image style={styles.img} source={require('../assets/textLogo.png')} />
       </View>
 
       <View style={styles.loginButtons}>
-        <Image
-          style={styles.loginButton}
-          source={require('../assets/kakao_login_button.png')}
-        />
+        <Pressable onPress={kakaoLogin}>
+          <Image
+            style={styles.loginButton}
+            source={require('../assets/kakao_login_button.png')}
+          />
+        </Pressable>
       </View>
     </View>
   );
@@ -21,8 +34,7 @@ function StartPage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#00ffff',
-
+    backgroundColor: '#00dbc5',
     justifyContent: 'space-between',
   },
   img: {
