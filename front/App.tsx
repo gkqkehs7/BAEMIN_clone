@@ -3,7 +3,7 @@ import LandingPage from './src/pages/LandingPage';
 import StartPage from './src/pages/StartPage';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   return <>{isLoggedIn ? <LandingPage /> : <StartPage />}</>;
 }
 
