@@ -1,4 +1,4 @@
-package com.baemin.newarchitecture.components;
+package com.minumon.baemin.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

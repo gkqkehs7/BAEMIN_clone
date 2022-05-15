@@ -1,4 +1,4 @@
-package com.baemin.newarchitecture;
+package com.minumon.baemin.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.baemin.BuildConfig;
-import com.baemin.newarchitecture.components.MainComponentsRegistry;
-import com.baemin.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.minumon.baemin.BuildConfig;
+import com.minumon.baemin.newarchitecture.components.MainComponentsRegistry;
+import com.minumon.baemin.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

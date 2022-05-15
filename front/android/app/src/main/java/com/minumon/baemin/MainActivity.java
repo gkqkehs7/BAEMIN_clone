@@ -1,4 +1,4 @@
-package com.baemin;
+package com.minumon.baemin;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
