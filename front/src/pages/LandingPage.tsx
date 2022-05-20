@@ -17,7 +17,6 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 import Entypo from 'react-native-vector-icons/Entypo';
 import {Modalize} from 'react-native-modalize';
 import LocationModal from '../components/LocationModal';
-import {IHandles} from 'react-native-modalize/lib/options';
 
 function LandingPage() {
   const modalizeRef = useRef<Modalize>(null);
@@ -48,7 +47,6 @@ function LandingPage() {
         {/* menu search */}
         <TextInput style={styles.search} />
       </View>
-
       <LocationModal ref={modalizeRef} />
     </View>
   );
@@ -95,6 +93,3 @@ const styles = StyleSheet.create({
 });
 
 export default LandingPage;
-function RefObject<T>(arg0: number): IHandles {
-  throw new Error('Function not implemented.');
-}
