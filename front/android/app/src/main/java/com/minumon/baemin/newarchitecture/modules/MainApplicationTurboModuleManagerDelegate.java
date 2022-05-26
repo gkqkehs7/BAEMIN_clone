@@ -1,4 +1,4 @@
-package com.baemin.newarchitecture.modules;
+package com.minumon.baemin.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;
