@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 import LandingPage from './src/pages/LandingPage';
 import StartPage from './src/pages/StartPage';
 
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import usePermissions from './src/hooks/usePermissions';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {StatusBar} from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +15,7 @@ function AppInner() {
 
   return (
     <>
+      <StatusBar backgroundColor="transparent" translucent={true} />
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
